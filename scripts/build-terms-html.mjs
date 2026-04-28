@@ -19,7 +19,6 @@ const LANG_ORDER = [
 const ctx = { window: {} };
 runInNewContext(readFileSync(join(__dirname, 'terms-i18n.js'), 'utf8'), ctx);
 const TERMS_I18N = ctx.window.TERMS_I18N;
-const EN_BUNDLE = TERMS_I18N.en;
 
 function escapeHtml(s) {
   return String(s)
@@ -68,21 +67,10 @@ function navHtml(currentCode, ariaLabel) {
 }
 
 function pageHtml(code, bundle) {
-  const normalized = {
-    ...bundle,
-    title: EN_BUNDLE.title,
-    metaDescription: EN_BUNDLE.metaDescription,
-    effective: EN_BUNDLE.effective,
-    product: EN_BUNDLE.product,
-    intro: EN_BUNDLE.intro,
-    footerNote: EN_BUNDLE.footerNote,
-    sections: EN_BUNDLE.sections
-  };
-
-  const lang = normalized.htmlLang || code;
-  const dir = normalized.dir || 'ltr';
-  const productBlock = normalized.product
-    ? `        <p class="effective">${escapeHtml(normalized.product)}</p>\n`
+  const lang = bundle.htmlLang || code;
+  const dir = bundle.dir || 'ltr';
+  const productBlock = bundle.product
+    ? `        <p class="effective">${escapeHtml(bundle.product)}</p>\n`
     : '';
 
   return `<!DOCTYPE html>
@@ -90,24 +78,24 @@ function pageHtml(code, bundle) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="${escapeHtml(normalized.metaDescription || normalized.title)}" />
-    <title>${escapeHtml(normalized.title)}</title>
+    <meta name="description" content="${escapeHtml(bundle.metaDescription || bundle.title)}" />
+    <title>${escapeHtml(bundle.title)}</title>
     <link rel="stylesheet" href="terms/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="wrap">
       <header>
-${navHtml(code, normalized.selectLabel || 'Languages')}
-        <h1>${escapeHtml(normalized.title)}</h1>
-        <p class="effective">${escapeHtml(normalized.effective)}</p>
+${navHtml(code, bundle.selectLabel || 'Languages')}
+        <h1>${escapeHtml(bundle.title)}</h1>
+        <p class="effective">${escapeHtml(bundle.effective)}</p>
 ${productBlock}      </header>
       <main id="main">
-        <p class="intro">${escapeHtml(normalized.intro)}</p>
-${renderSections(normalized.sections)}
+        <p class="intro">${escapeHtml(bundle.intro)}</p>
+${renderSections(bundle.sections)}
         <footer>
-          <p>${escapeHtml(normalized.footerNote || '')}</p>
-          <p>${escapeHtml(normalized.contactLabel || 'Contact')}: <a class="contact-email" href="mailto:supp0rt.serg@yandex.com">supp0rt.serg@yandex.com</a></p>
+          <p>${escapeHtml(bundle.footerNote || '')}</p>
+          <p>${escapeHtml(bundle.contactLabel || 'Contact')}: <a class="contact-email" href="mailto:supp0rt.serg@yandex.com">supp0rt.serg@yandex.com</a></p>
         </footer>
       </main>
     </div>
