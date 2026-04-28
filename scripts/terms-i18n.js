@@ -1,98 +1,126 @@
-/* ClowTalker Terms of Use — 20 locales (reference translations; legal review recommended). */
+/* Tandem AI Chat Terms of Use — 20 locales (reference translations; legal review recommended). */
 window.TERMS_I18N = {
   en: {
     nativeName: 'English',
     htmlLang: 'en',
     dir: 'ltr',
     selectLabel: 'Language',
-    title: 'Terms of Use — ClowTalker',
-    metaDescription: 'ClowTalker iOS app — Terms of Use. Effective April 9, 2026.',
-    effective: 'Effective date: April 9, 2026',
-    product: 'Product: ClowTalker mobile application (iOS)',
-    intro: 'These Terms of Use govern your use of the ClowTalker app. By downloading, installing, or using the app, you agree to these terms.',
+    title: 'Terms of Use — Tandem AI Chat',
+    metaDescription: 'Tandem AI Chat — Terms of Use. Effective date: 2026-04-28.',
+    effective: 'Effective date: 2026-04-28',
+    product: 'Product: Tandem AI Chat',
+    intro: 'These Terms of Use govern your access to and use of Tandem AI Chat (the “App”). By downloading, installing, or using the App, you agree to these Terms.',
     contactLabel: 'Contact',
-    footerNote: 'This document is a practical baseline for release preparation. For production launch in specific jurisdictions, legal review is recommended.',
+    footerNote: '',
     sections: [
       {
-        title: '1. Who provides the app',
+        title: '1. App Identity and Relationship to Telegram',
         blocks: [
-          { type: 'p', text: 'ClowTalker is provided by the app owner/developer listed in the repository and/or in the App Store listing.' },
-          { type: 'p', text: 'Contact email: sergey.cosilov@gmail.com' }
+          { type: 'p', text: 'Tandem AI Chat is an unofficial, third-party client that uses Telegram APIs and TDLib.' },
+          { type: 'p', text: 'Tandem AI Chat is not affiliated with, endorsed by, sponsored by, or operated by Telegram.' },
+          { type: 'p', text: 'You are responsible for complying with Telegram’s platform rules and applicable laws when using the App.' }
         ]
       },
       {
-        title: '2. Scope of the app',
+        title: '2. Eligibility and Acceptable Use',
         blocks: [
-          { type: 'p', text: 'ClowTalker helps you create and manage tasks using voice input and Siri/App Intents. Optional integrations may send task text to third-party services you configure (for example, Telegram Bot API or a custom HTTPS endpoint).' }
-        ]
-      },
-      {
-        title: '3. Eligibility and acceptable use',
-        blocks: [
-          { type: 'p', text: 'You agree to:' },
+          { type: 'p', text: 'You agree to use the App only for lawful purposes and not to:' },
           { type: 'ul', items: [
-            'use the app only for lawful purposes;',
-            'avoid reverse engineering, abusing, or attempting to disrupt the app;',
-            'avoid using stolen credentials, tokens, or accounts;',
-            'comply with Apple App Store terms and your local laws.'
+            'abuse, spam, or automate harmful messaging behavior;',
+            'use stolen credentials, tokens, accounts, or unauthorized API keys;',
+            'interfere with service integrity, security, or availability.'
+          ]},
+          { type: 'p', text: 'The App may enforce operational limits (for example, safety limits for auto-send behavior) to reduce abuse risk.' }
+        ]
+      },
+      {
+        title: '3. Your Credentials and Configuration',
+        blocks: [
+          { type: 'p', text: 'You provide and manage your own Telegram credentials (for example `api_id` and `api_hash`) and your own chat/bot configuration.' },
+          { type: 'p', text: 'You are solely responsible for:' },
+          { type: 'ul', items: [
+            'secure handling of your credentials and connected accounts;',
+            'choosing destination chats, monitored chats, and sending modes;',
+            'all content you send through Telegram and third-party bots/providers.'
           ]}
         ]
       },
       {
-        title: '4. Subscriptions and billing',
+        title: '4. Sending Modes and User Responsibility',
         blocks: [
-          { type: 'p', text: 'The app may include a free tier with limited task submissions and an auto-renewable subscription (Premium) that removes or extends limits.' },
-          { type: 'p', text: 'Billing is processed by Apple (StoreKit / App Store), not directly by the developer. Subscription management, cancellation, refunds, and renewals follow Apple policies and your App Store account settings.' }
+          { type: 'p', text: 'The App may support multiple delivery modes (for example Draft, Link, Auto-send).' },
+          { type: 'ul', items: [
+            'Draft mode allows manual review before sending and is recommended for sensitive content.',
+            'Auto-send may send generated text without manual review.'
+          ]},
+          { type: 'p', text: 'You are responsible for reviewing and controlling outputs, especially before sending legal, financial, personal, or sensitive data.' }
         ]
       },
       {
-        title: '5. Third-party services',
+        title: '5. Third-Party Services',
         blocks: [
-          { type: 'p', text: 'If you enable optional integrations (for example Telegram), your data is sent to those services according to your configuration. Their own terms and privacy policies apply.' },
-          { type: 'p', text: 'The developer is not responsible for third-party availability, policy changes, or losses from incorrect configuration (for example wrong bot token or endpoint).' }
+          { type: 'p', text: 'If you route content to external bots/providers, those services process data under their own terms and privacy policies.' },
+          { type: 'p', text: 'The App operator is not responsible for:' },
+          { type: 'ul', items: [
+            'third-party availability, outages, or policy changes;',
+            'third-party retention, training, or moderation decisions;',
+            'losses caused by user misconfiguration or unsafe sharing.'
+          ]}
         ]
       },
       {
-        title: '6. Data and privacy',
+        title: '6. Data and Privacy',
         blocks: [
-          { type: 'p', text: 'Your use is also governed by the Privacy Policy (see PRIVACY_POLICY.md in the repository).' }
+          { type: 'p', text: 'Your use of the App is also governed by the Privacy Policy.' },
+          { type: 'p', text: 'Core principle: the App does not process or store your message contents on a Tandem-operated backend in the current architecture.' }
         ]
       },
       {
-        title: '7. Disclaimers',
+        title: '7. AI/ML Training Restriction',
         blocks: [
-          { type: 'p', text: 'The app is provided “as is” and “as available” to the maximum extent permitted by law. No guarantee of uninterrupted, error-free operation or fitness for a particular purpose is made.' },
-          { type: 'p', text: 'Speech recognition quality depends on device, locale, OS, network, and Apple platform limitations.' }
+          { type: 'p', text: 'Telegram message data processed via this App is not used by the App operator for AI/ML model training or fine-tuning.' },
+          { type: 'p', text: 'If you voluntarily send data to third-party bots/providers, those third parties may apply their own retention and training policies; you are responsible for that transfer.' }
         ]
       },
       {
-        title: '8. Limitation of liability',
+        title: '8. Background Processing Disclaimer (iOS)',
         blocks: [
-          { type: 'p', text: 'To the maximum extent permitted by law, the developer is not liable for indirect, incidental, special, consequential, or punitive damages, including loss of data, profit, or business interruption. Mandatory local law may limit these exclusions.' }
+          { type: 'p', text: 'Background behavior on iOS is best-effort and controlled by the operating system.' },
+          { type: 'p', text: 'No guarantee is made for fixed-frequency or real-time background processing.' }
         ]
       },
       {
-        title: '9. Changes',
+        title: '9. Subscription and Billing (if applicable)',
         blocks: [
-          { type: 'p', text: 'The developer may update the app and these terms. Material changes should be reflected by updating the effective date and publishing the revised text.' }
+          { type: 'p', text: 'If paid features are offered, billing is processed by Apple (App Store / StoreKit), not directly by the App operator.' },
+          { type: 'p', text: 'Subscription management, renewal, cancellation, and refunds are handled under Apple’s policies.' }
         ]
       },
       {
-        title: '10. Termination',
+        title: '10. Disclaimers',
         blocks: [
-          { type: 'p', text: 'You may stop using the app at any time by uninstalling it. The developer may restrict access if you violate these terms or harm users, services, or infrastructure.' }
+          { type: 'p', text: 'The App is provided “as is” and “as available,” to the maximum extent permitted by law.' },
+          { type: 'p', text: 'No guarantee is made that operation will be uninterrupted, error-free, or suitable for every use case.' }
         ]
       },
       {
-        title: '11. Governing law',
+        title: '11. Limitation of Liability',
         blocks: [
-          { type: 'p', text: 'These terms are governed by applicable law based on the developer’s jurisdiction, unless mandatory consumer protection rules in your country provide otherwise.' }
+          { type: 'p', text: 'To the maximum extent permitted by law, the App operator is not liable for indirect, incidental, special, consequential, or punitive damages, including loss of data, profits, or business interruption.' },
+          { type: 'p', text: 'Mandatory consumer-law protections in your jurisdiction may apply.' }
         ]
       },
       {
-        title: '12. Contact',
+        title: '12. Changes to Terms',
         blocks: [
-          { type: 'p', text: 'For legal or support questions: sergey.cosilov@gmail.com' }
+          { type: 'p', text: 'These Terms may be updated from time to time.' },
+          { type: 'p', text: 'Material changes should be reflected by updating the effective date and publishing the revised text.' }
+        ]
+      },
+      {
+        title: '13. Contact',
+        blocks: [
+          { type: 'p', text: 'For legal/support inquiries, contact: supp0rt.serg@yandex.com' }
         ]
       }
     ]
@@ -112,7 +140,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. 应用提供方', blocks: [
         { type: 'p', text: 'ClowTalker 由仓库和/或 App Store 列表中所列的应用所有者/开发者提供。' },
-        { type: 'p', text: '联系邮箱：sergey.cosilov@gmail.com' }
+        { type: 'p', text: '联系邮箱：supp0rt.serg@yandex.com' }
       ]},
       { title: '2. 应用范围', blocks: [
         { type: 'p', text: 'ClowTalker 帮助您通过语音输入及 Siri/应用意图创建和管理任务。可选集成可将任务文本发送至您配置的第三方服务（例如 Telegram Bot API 或自定义 HTTPS 端点）。' }
@@ -154,7 +182,7 @@ window.TERMS_I18N = {
         { type: 'p', text: '本条款受开发者司法辖区适用法律管辖，除非您所在国家/地区的强制性消费者保护规则另有规定。' }
       ]},
       { title: '12. 联系', blocks: [
-        { type: 'p', text: '法律或支持问题：sergey.cosilov@gmail.com' }
+        { type: 'p', text: '法律或支持问题：supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -173,7 +201,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. ऐप कौन प्रदान करता है', blocks: [
         { type: 'p', text: 'ClowTalker ऐप के मालिक/डेवलपर द्वारा प्रदान किया जाता है, जो रिपॉज़िटरी और/या App Store सूची में उल्लिखित है।' },
-        { type: 'p', text: 'ईमेल: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'ईमेल: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. ऐप का दायरा', blocks: [
         { type: 'p', text: 'ClowTalker आवाज़ इनपुट और Siri/App Intents से कार्य बनाने और प्रबंधित करने में मदद करता है। वैकल्पिक एकीकरण कार्य पाठ को आपके द्वारा कॉन्फ़िगर किए गए तृतीय-पक्ष सेवाओं को भेज सकते हैं (उदाहरण: Telegram Bot API या कस्टम HTTPS एंडपॉइंट)।' }
@@ -215,7 +243,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'ये शर्तें डेवलपर के क्षेत्राधिकार के अनुसार लागू कानून द्वारा शासित हैं, जब तक आपके देश में अनिवार्य उपभोक्ता संरक्षण नियम अन्यथा न प्रदान करें।' }
       ]},
       { title: '12. संपर्क', blocks: [
-        { type: 'p', text: 'कानूनी या सहायता प्रश्न: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'कानूनी या सहायता प्रश्न: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -234,7 +262,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Quién proporciona la app', blocks: [
         { type: 'p', text: 'ClowTalker la proporciona el propietario/desarrollador indicado en el repositorio y/o en la ficha del App Store.' },
-        { type: 'p', text: 'Correo de contacto: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Correo de contacto: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Alcance de la app', blocks: [
         { type: 'p', text: 'ClowTalker ayuda a crear y gestionar tareas con voz y Siri/App Intents. Las integraciones opcionales pueden enviar el texto de las tareas a servicios de terceros que usted configure (por ejemplo, API de bot de Telegram o un endpoint HTTPS propio).' }
@@ -276,7 +304,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Estos términos se rigen por la ley aplicable según la jurisdicción del desarrollador, salvo que normas imperativas de protección al consumidor en su país dispongan lo contrario.' }
       ]},
       { title: '12. Contacto', blocks: [
-        { type: 'p', text: 'Consultas legales o de soporte: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Consultas legales o de soporte: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -295,7 +323,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Qui fournit l’application', blocks: [
         { type: 'p', text: 'ClowTalker est fournie par le propriétaire/développeur indiqué dans le dépôt et/ou sur la fiche App Store.' },
-        { type: 'p', text: 'Courriel : sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Courriel : supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Portée de l’application', blocks: [
         { type: 'p', text: 'ClowTalker aide à créer et gérer des tâches par la voix et Siri/App Intents. Des intégrations facultatives peuvent envoyer le texte des tâches vers des services tiers que vous configurez (par ex. API bot Telegram ou point de terminaison HTTPS personnalisé).' }
@@ -337,7 +365,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Les présentes conditions sont régies par le droit applicable selon la juridiction du développeur, sauf si des règles impératives de protection des consommateurs dans votre pays prévoient le contraire.' }
       ]},
       { title: '12. Contact', blocks: [
-        { type: 'p', text: 'Questions juridiques ou assistance : sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Questions juridiques ou assistance : supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -356,7 +384,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '١. من يقدّم التطبيق', blocks: [
         { type: 'p', text: 'يقدّم تطبيق ClowTalker مالك/مطوّر التطبيق المذكور في المستودع و/أو في صفحة App Store.' },
-        { type: 'p', text: 'البريد الإلكتروني: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'البريد الإلكتروني: supp0rt.serg@yandex.com' }
       ]},
       { title: '٢. نطاق التطبيق', blocks: [
         { type: 'p', text: 'يساعد ClowTalker على إنشاء المهام وإدارتها عبر الإدخال الصوتي و Siri و App Intents. قد ترسل التكاملات الاختيارية نص المهام إلى خدمات طرف ثالث تضبطها (مثل Telegram Bot API أو نقطة نهاية HTTPS مخصصة).' }
@@ -398,7 +426,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'تخضع هذه الشروط للقانون المعمول به حسب اختصاص المطوّر، ما لم تنص قواعد إلزامية لحماية المستهلك في بلدك على خلاف ذلك.' }
       ]},
       { title: '١٢. الاتصال', blocks: [
-        { type: 'p', text: 'للاستفسارات القانونية أو الدعم: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'للاستفسارات القانونية أو الدعم: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -417,7 +445,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '১. অ্যাপ কে সরবরাহ করে', blocks: [
         { type: 'p', text: 'ClowTalker অ্যাপের মালিক/ডেভেলপার দ্বারা সরবরাহ করা হয়, যা রিপোজিটরি এবং/অথবা App Store তালিকায় উল্লিখিত।' },
-        { type: 'p', text: 'যোগাযোগের ইমেইল: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'যোগাযোগের ইমেইল: supp0rt.serg@yandex.com' }
       ]},
       { title: '২. অ্যাপের পরিধি', blocks: [
         { type: 'p', text: 'ClowTalker কণ্ঠ ইনপুট এবং Siri/App Intents দিয়ে কাজ তৈরি ও পরিচালনায় সাহায্য করে। ঐচ্ছিক ইন্টিগ্রেশন আপনার কনফিগার করা তৃতীয় পক্ষের সেবায় কাজের টেক্সট পাঠাতে পারে (যেমন Telegram Bot API বা কাস্টম HTTPS এন্ডপয়েন্ট)।' }
@@ -459,7 +487,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'এই শর্তাবলী ডেভেলপারের এখতিয়ার অনুযায়ী প্রযোজ্য আইন দ্বারা পরিচালিত, যদি না আপনার দেশের বাধ্যতামূলক ভোক্তা সুরক্ষা বিধান অন্যথায় নির্দেশ করে।' }
       ]},
       { title: '১২. যোগাযোগ', blocks: [
-        { type: 'p', text: 'আইনি বা সহায়তা প্রশ্ন: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'আইনি বা সহায়তা প্রশ্ন: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -478,7 +506,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Quem fornece o app', blocks: [
         { type: 'p', text: 'O ClowTalker é fornecido pelo proprietário/desenvolvedor indicado no repositório e/ou na listagem da App Store.' },
-        { type: 'p', text: 'E-mail de contato: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'E-mail de contato: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Escopo do app', blocks: [
         { type: 'p', text: 'O ClowTalker ajuda a criar e gerenciar tarefas por voz e Siri/App Intents. Integrações opcionais podem enviar o texto das tarefas a serviços de terceiros que você configurar (por exemplo, API de bot do Telegram ou endpoint HTTPS personalizado).' }
@@ -520,7 +548,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Estes termos são regidos pela lei aplicável com base na jurisdição do desenvolvedor, salvo se regras imperativas de proteção ao consumidor no seu país dispuserem de outro modo.' }
       ]},
       { title: '12. Contato', blocks: [
-        { type: 'p', text: 'Questões legais ou de suporte: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Questões legais ou de suporte: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -539,7 +567,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Кто предоставляет приложение', blocks: [
         { type: 'p', text: 'Приложение ClowTalker предоставляется владельцем/разработчиком, указанным в репозитории и/или в карточке App Store.' },
-        { type: 'p', text: 'Электронная почта: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Электронная почта: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Назначение приложения', blocks: [
         { type: 'p', text: 'ClowTalker помогает создавать и управлять задачами с помощью голосового ввода и Siri/App Intents. Дополнительные интеграции могут отправлять текст задач в сторонние сервисы по вашей настройке (например, Telegram Bot API или пользовательский HTTPS-эндпоинт).' }
@@ -581,7 +609,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Условия регулируются применимым правом в зависимости от юрисдикции разработчика, если иное не предписано императивными нормами защиты потребителей в вашей стране.' }
       ]},
       { title: '12. Контакты', blocks: [
-        { type: 'p', text: 'Юридические вопросы и поддержка: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Юридические вопросы и поддержка: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -600,7 +628,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '۱. ایپ فراہم کون کرتا ہے', blocks: [
         { type: 'p', text: 'ClowTalker ایپ کے مالک/ڈویلپر فراہم کرتا ہے، جو ذخیرہ اور/یا App Store فہرست میں درج ہے۔' },
-        { type: 'p', text: 'ای میل: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'ای میل: supp0rt.serg@yandex.com' }
       ]},
       { title: '۲. ایپ کا دائرہ', blocks: [
         { type: 'p', text: 'ClowTalker آواز کے ذریعے اور Siri/App Intents سے کام بنانے اور منظم کرنے میں مدد کرتا ہے۔ اختیاری انضمام آپ کی ترتیب کردہ تیسری پارٹی خدمات کو ٹاسک متن بھیج سکتے ہیں (مثلاً Telegram Bot API یا حسب ضرورت HTTPS اینڈ پوائنٹ)۔' }
@@ -642,7 +670,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'یہ شرائط ڈویلپر کے دائرہ اختیار کے مطابق لاگو قانون کے تابع ہیں، جب تک آپ کے ملک میں لازمی صارف تحفظ کے قواعد خلاف فراہم نہ کریں۔' }
       ]},
       { title: '۱۲. رابطہ', blocks: [
-        { type: 'p', text: 'قانونی یا معاونت کے سوالات: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'قانونی یا معاونت کے سوالات: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -661,7 +689,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Siapa yang menyediakan aplikasi', blocks: [
         { type: 'p', text: 'ClowTalker disediakan oleh pemilik/pengembang aplikasi yang tercantum di repositori dan/atau di daftar App Store.' },
-        { type: 'p', text: 'Email kontak: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Email kontak: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Ruang lingkup aplikasi', blocks: [
         { type: 'p', text: 'ClowTalker membantu membuat dan mengelola tugas dengan masukan suara dan Siri/App Intents. Integrasi opsional dapat mengirim teks tugas ke layanan pihak ketiga yang Anda konfigurasikan (misalnya Telegram Bot API atau endpoint HTTPS kustom).' }
@@ -703,7 +731,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Ketentuan ini diatur oleh hukum yang berlaku berdasarkan yurisdiksi pengembang, kecuali aturan wajib perlindungan konsumen di negara Anda menentukan lain.' }
       ]},
       { title: '12. Kontak', blocks: [
-        { type: 'p', text: 'Pertanyaan hukum atau dukungan: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Pertanyaan hukum atau dukungan: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -722,7 +750,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Wer stellt die App bereit', blocks: [
         { type: 'p', text: 'ClowTalker wird vom im Repository und/oder im App Store-Eintrag genannten Eigentümer/Entwickler bereitgestellt.' },
-        { type: 'p', text: 'Kontakt-E-Mail: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Kontakt-E-Mail: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Leistungsumfang der App', blocks: [
         { type: 'p', text: 'ClowTalker hilft beim Erstellen und Verwalten von Aufgaben per Spracheingabe und Siri/App Intents. Optionale Integrationen können Aufgabentext an von Ihnen konfigurierte Drittanbieterdienste senden (z. B. Telegram Bot API oder benutzerdefinierter HTTPS-Endpunkt).' }
@@ -764,7 +792,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Diese Bedingungen unterliegen dem anwendbaren Recht gemäß der Rechtsordnung des Entwicklers, sofern zwingende Verbraucherschutzvorschriften in Ihrem Land nichts anderes vorsehen.' }
       ]},
       { title: '12. Kontakt', blocks: [
-        { type: 'p', text: 'Rechtliche oder Support-Anfragen: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Rechtliche oder Support-Anfragen: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -783,7 +811,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. アプリの提供者', blocks: [
         { type: 'p', text: 'ClowTalker は、リポジトリおよび／または App Store の掲載情報に記載されたアプリ所有者／開発者により提供されます。' },
-        { type: 'p', text: '連絡先メール: sergey.cosilov@gmail.com' }
+        { type: 'p', text: '連絡先メール: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. アプリの範囲', blocks: [
         { type: 'p', text: 'ClowTalker は、音声入力および Siri／App Intents を用いたタスクの作成・管理を支援します。オプションの連携により、お客様が設定した第三者サービス（例: Telegram Bot API またはカスタム HTTPS エンドポイント）へタスクのテキストが送信される場合があります。' }
@@ -825,7 +853,7 @@ window.TERMS_I18N = {
         { type: 'p', text: '本規約は、開発者の法域に基づく適用法に従います。ただし、お客様の国の強行の消費者保護規則が別段の定めをする場合を除きます。' }
       ]},
       { title: '12. 連絡先', blocks: [
-        { type: 'p', text: '法務またはサポート: sergey.cosilov@gmail.com' }
+        { type: 'p', text: '法務またはサポート: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -844,7 +872,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Nani anatoa programu', blocks: [
         { type: 'p', text: 'ClowTalker inatolewa na mmiliki/msanidi programu aliyeorodheshwa katika hifadhi na/au orodha ya App Store.' },
-        { type: 'p', text: 'Barua pepe ya mawasiliano: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Barua pepe ya mawasiliano: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Upeo wa programu', blocks: [
         { type: 'p', text: 'ClowTalker inasaidia kuunda na kusimamia kazi kwa sauti na Siri/App Intents. Muunganisho wa hiari unaweza kutuma maandishi ya kazi kwa huduma za wahusika wengine ulizoweka (k.m. Telegram Bot API au kituo cha HTTPS maalum).' }
@@ -886,7 +914,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Masharti haya yanaongozwa na sheria inayotumika kulingana na mamlaka ya msanidi, isipokuwa kanuni za lazima za kulinda mtumiaji katika nchi yako zikisema tofauti.' }
       ]},
       { title: '12. Mawasiliano', blocks: [
-        { type: 'p', text: 'Maswali ya kisheria au msaada: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Maswali ya kisheria au msaada: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -905,7 +933,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '१. अॅप कोण पुरवते', blocks: [
         { type: 'p', text: 'ClowTalker अॅप मालक/डेव्हलपरद्वारे पुरवले जाते, जे रिपॉझिटरी आणि/किंवा App Store यादीत नमूद केले आहे.' },
-        { type: 'p', text: 'संपर्क ईमेल: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'संपर्क ईमेल: supp0rt.serg@yandex.com' }
       ]},
       { title: '२. अॅपचा दायरा', blocks: [
         { type: 'p', text: 'ClowTalker आवाज इनपुट आणि Siri/App Intents सह कार्ये तयार आणि व्यवस्थापित करण्यात मदत करते. पर्यायी एकत्रीकरण आपल्या कॉन्फिगर केलेल्या तृतीय-पक्ष सेवांना कार्य मजकूर पाठवू शकते (उदा. Telegram Bot API किंवा सानुकूल HTTPS एंडपॉइंट).' }
@@ -947,7 +975,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'या अटी डेव्हलपरच्या अधिकारक्षेत्रानुसार लागू कायद्याने नियंत्रित आहेत, जोपर्यंत आपल्या देशातील अनिवार्य ग्राहक संरक्षण नियम इतर काही सांगत नाहीत.' }
       ]},
       { title: '१२. संपर्क', blocks: [
-        { type: 'p', text: 'कायदेशीर किंवा सहाय्य प्रश्न: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'कायदेशीर किंवा सहाय्य प्रश्न: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -966,7 +994,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. యాప్ అందించేది ఎవరు', blocks: [
         { type: 'p', text: 'ClowTalker యాప్ యజమాని/డెవలపర్ ద్వారా అందించబడుతుంది, రిపోజిటరీ మరియు/లేదా App Store జాబితాలో పేర్కొనబడింది.' },
-        { type: 'p', text: 'సంప్రదింపు ఇమెయిల్: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'సంప్రదింపు ఇమెయిల్: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. యాప్ పరిధి', blocks: [
         { type: 'p', text: 'ClowTalker వాయిస్ ఇన్‌పుట్ మరియు Siri/App Intents తో పనులను సృష్టించడం మరియు నిర్వహించడంలో సహాయపడుతుంది. ఐచ్ఛిక ఇంటిగ్రేషన్‌లు మీరు కాన్ఫిగర్ చేసిన తృతీయ-పక్ష సేవలకు పని వచనాన్ని పంపవచ్చు (ఉదా. Telegram Bot API లేదా కస్టమ్ HTTPS ఎండ్‌పాయింట్).' }
@@ -1008,7 +1036,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'ఈ నిబంధనలు డెవలపర్ అధికార పరిధిలో వర్తించే చట్టం ద్వారా నియంత్రించబడతాయి, మీ దేశంలో తప్పనిసరి వినియోగదార రక్షణ నియమాలు వేరుగా పేర్కొనకపోతే.' }
       ]},
       { title: '12. సంప్రదింపు', blocks: [
-        { type: 'p', text: 'చట్టపరమైన లేదా మద్దతు ప్రశ్నలు: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'చట్టపరమైన లేదా మద్దతు ప్రశ్నలు: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -1027,7 +1055,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Uygulamayı kim sağlar', blocks: [
         { type: 'p', text: 'ClowTalker, depoda ve/veya App Store listesinde belirtilen uygulama sahibi/geliştirici tarafından sağlanır.' },
-        { type: 'p', text: 'İletişim e-postası: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'İletişim e-postası: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Uygulamanın kapsamı', blocks: [
         { type: 'p', text: 'ClowTalker, ses girişi ve Siri/App Intents ile görev oluşturma ve yönetmeye yardımcı olur. İsteğe bağlı entegrasyonlar, yapılandırdığınız üçüncü taraf hizmetlere (ör. Telegram Bot API veya özel HTTPS uç noktası) görev metni gönderebilir.' }
@@ -1069,7 +1097,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Bu koşullar, geliştiricinin yargı bölgesine göre uygulanabilir hukuka tabidir; ülkenizdeki zorunlu tüketici koruma kuralları aksi halde düzenlemedikçe.' }
       ]},
       { title: '12. İletişim', blocks: [
-        { type: 'p', text: 'Hukuki veya destek soruları: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Hukuki veya destek soruları: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -1088,7 +1116,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. 앱 제공 주체', blocks: [
         { type: 'p', text: 'ClowTalker는 저장소 및/또는 App Store 목록에 명시된 앱 소유자/개발자가 제공합니다.' },
-        { type: 'p', text: '연락 이메일: sergey.cosilov@gmail.com' }
+        { type: 'p', text: '연락 이메일: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. 앱의 범위', blocks: [
         { type: 'p', text: 'ClowTalker는 음성 입력과 Siri/App Intents로 작업을 만들고 관리하는 데 도움을 줍니다. 선택적 연동을 통해 사용자가 구성한 제3자 서비스(예: Telegram Bot API 또는 사용자 지정 HTTPS 엔드포인트)로 작업 텍스트가 전송될 수 있습니다.' }
@@ -1130,7 +1158,7 @@ window.TERMS_I18N = {
         { type: 'p', text: '본 약관은 개발자 관할권에 따른 적용 법률의 적용을 받으며, 귀하 국가의 강행적 소비자 보호 규칙이 달리 정하지 않는 한 그러합니다.' }
       ]},
       { title: '12. 문의', blocks: [
-        { type: 'p', text: '법률 또는 지원 문의: sergey.cosilov@gmail.com' }
+        { type: 'p', text: '법률 또는 지원 문의: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -1149,7 +1177,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Ai cung cấp ứng dụng', blocks: [
         { type: 'p', text: 'ClowTalker do chủ sở hữu/nhà phát triển ứng dụng được nêu trong kho lưu trữ và/hoặc danh sách App Store cung cấp.' },
-        { type: 'p', text: 'Email liên hệ: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Email liên hệ: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Phạm vi ứng dụng', blocks: [
         { type: 'p', text: 'ClowTalker giúp tạo và quản lý tác vụ bằng giọng nói và Siri/App Intents. Tích hợp tùy chọn có thể gửi nội dung tác vụ tới dịch vụ bên thứ ba do bạn cấu hình (ví dụ Telegram Bot API hoặc điểm cuối HTTPS tùy chỉnh).' }
@@ -1191,7 +1219,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'Các điều khoản này chịu sự điều chỉnh của pháp luật áp dụng theo khu vực pháp lý của nhà phát triển, trừ khi quy tắc bảo vệ người tiêu dùng bắt buộc tại quốc gia của bạn quy định khác.' }
       ]},
       { title: '12. Liên hệ', blocks: [
-        { type: 'p', text: 'Câu hỏi pháp lý hoặc hỗ trợ: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Câu hỏi pháp lý hoặc hỗ trợ: supp0rt.serg@yandex.com' }
       ]}
     ]
   },
@@ -1210,7 +1238,7 @@ window.TERMS_I18N = {
     sections: [
       { title: '1. Chi fornisce l’app', blocks: [
         { type: 'p', text: 'ClowTalker è fornita dal proprietario/sviluppatore indicato nel repository e/o nell’elenco dell’App Store.' },
-        { type: 'p', text: 'Email di contatto: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Email di contatto: supp0rt.serg@yandex.com' }
       ]},
       { title: '2. Ambito dell’app', blocks: [
         { type: 'p', text: 'ClowTalker aiuta a creare e gestire attività tramite input vocale e Siri/App Intents. Le integrazioni opzionali possono inviare il testo delle attività a servizi di terze parti da te configurati (ad es. API bot Telegram o endpoint HTTPS personalizzato).' }
@@ -1252,7 +1280,7 @@ window.TERMS_I18N = {
         { type: 'p', text: 'I termini sono regolati dalla legge applicabile in base alla giurisdizione dello sviluppatore, salvo che norme imperative di protezione dei consumatori nel tuo Paese dispongano diversamente.' }
       ]},
       { title: '12. Contatto', blocks: [
-        { type: 'p', text: 'Questioni legali o di supporto: sergey.cosilov@gmail.com' }
+        { type: 'p', text: 'Questioni legali o di supporto: supp0rt.serg@yandex.com' }
       ]}
     ]
   }
